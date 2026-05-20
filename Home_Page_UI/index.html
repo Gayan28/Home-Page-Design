@@ -1,397 +1,709 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Flower Shop</title>
 
-  <!-- Tailwind -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
-    body{
+    body {
       font-family: 'Poppins', sans-serif;
+    }
+
+    .section-title {
+      @apply text-4xl md:text-5xl font-bold mb-4 text-gray-800;
+    }
+
+    .section-subtitle {
+      @apply text-gray-500 max-w-2xl mx-auto;
     }
   </style>
 </head>
 
 <body class="bg-white text-gray-800">
 
+  <!-- ========================= -->
   <!-- TOP BAR -->
-  <div class="bg-black text-white text-center text-sm py-2">
-    All flowers and bouquets 20% off this week
+  <!-- ========================= -->
+
+  <div class="bg-black text-white text-center text-sm py-3 tracking-wide">
+    🌸 Fresh Flowers & Bouquets — 20% Off This Week
   </div>
 
+  <!-- ========================= -->
   <!-- NAVBAR -->
-  <header class="shadow-sm">
+  <!-- ========================= -->
+
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+
     <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
 
-      <h1 class="text-3xl font-bold text-pink-600">
+      <!-- Logo -->
+      <h1 class="text-3xl font-extrabold text-pink-500">
         Florist
       </h1>
 
-      <nav class="hidden md:flex gap-8 text-sm font-medium">
-        <a href="#" class="hover:text-pink-500">Home</a>
-        <a href="#" class="hover:text-pink-500">Shop</a>
-        <a href="#" class="hover:text-pink-500">Blog</a>
-        <a href="#" class="hover:text-pink-500">Pages</a>
-        <a href="#" class="hover:text-pink-500">Contact</a>
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center gap-10 font-medium">
+
+        <a href="#" class="hover:text-pink-500 transition duration-300">
+          Home
+        </a>
+
+        <a href="#" class="hover:text-pink-500 transition duration-300">
+          Shop
+        </a>
+
+        <a href="#" class="hover:text-pink-500 transition duration-300">
+          Blog
+        </a>
+
+        <a href="#" class="hover:text-pink-500 transition duration-300">
+          Pages
+        </a>
+
+        <a href="#" class="hover:text-pink-500 transition duration-300">
+          Contact
+        </a>
+
       </nav>
 
-      <button class="bg-pink-500 text-white px-5 py-2 rounded-full hover:bg-pink-600 transition">
+      <!-- Button -->
+      <button
+        class="hidden md:block bg-gradient-to-r from-pink-500 to-red-400 text-white px-6 py-3 rounded-full hover:scale-105 hover:shadow-xl transition duration-300"
+      >
         Shop Now
       </button>
+
     </div>
+
   </header>
 
-  <!-- HERO -->
-  <section class="bg-gray-100">
-    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+  <!-- ========================= -->
+  <!-- HERO SECTION -->
+  <!-- ========================= -->
 
-      <div>
-        <p class="text-pink-500 font-semibold mb-4">
-          Fresh Flowers
-        </p>
+  <section class="bg-gray-100 overflow-hidden">
 
-        <h2 class="text-5xl font-bold leading-tight mb-6">
-          Beautiful Flowers For Every Occasion
-        </h2>
+    <div class="max-w-7xl mx-auto px-6 py-24">
 
-        <p class="text-gray-600 mb-8">
-          Discover fresh handmade bouquets crafted with love and elegance.
-        </p>
+      <div class="grid md:grid-cols-2 gap-14 items-center">
 
-        <button class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-full transition">
-          Start Shopping
-        </button>
-      </div>
+        <!-- Left Content -->
+        <div>
 
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1200"
-          alt="Flowers"
-          class="rounded-2xl shadow-lg w-full"
-        />
+          <p class="text-pink-500 font-semibold mb-5 uppercase tracking-widest">
+            Fresh Flowers
+          </p>
+
+          <h2 class="text-5xl md:text-6xl font-extrabold leading-tight mb-8">
+            Beautiful Flowers For Every Occasion
+          </h2>
+
+          <p class="text-gray-600 text-lg leading-relaxed mb-10">
+            Elegant handcrafted flower arrangements designed to bring happiness,
+            love, and unforgettable memories.
+          </p>
+
+          <button
+            class="bg-gradient-to-r from-pink-500 to-red-400 text-white px-8 py-4 rounded-full font-medium hover:-translate-y-1 hover:shadow-2xl transition duration-300"
+          >
+            Start Shopping
+          </button>
+
+        </div>
+
+        <!-- Right Image -->
+        <div>
+
+          <img
+            src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1200"
+            alt="Flower Hero"
+            class="rounded-3xl shadow-2xl w-full hover:scale-105 transition duration-500"
+          >
+
+        </div>
+
       </div>
 
     </div>
+
   </section>
 
+  <!-- ========================= -->
   <!-- FEATURES -->
-  <section class="py-16">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+  <!-- ========================= -->
 
-      <div class="text-center p-6 border rounded-2xl">
-        <div class="text-4xl mb-4">🚚</div>
-        <h3 class="font-semibold mb-2">Free Delivery</h3>
-        <p class="text-sm text-gray-500">
-          Fast and secure delivery
-        </p>
-      </div>
+  <section class="py-20">
 
-      <div class="text-center p-6 border rounded-2xl">
-        <div class="text-4xl mb-4">💐</div>
-        <h3 class="font-semibold mb-2">Fresh Flowers</h3>
-        <p class="text-sm text-gray-500">
-          Hand-picked premium flowers
-        </p>
-      </div>
-
-      <div class="text-center p-6 border rounded-2xl">
-        <div class="text-4xl mb-4">🎁</div>
-        <h3 class="font-semibold mb-2">Gift Packages</h3>
-        <p class="text-sm text-gray-500">
-          Perfect surprise gifts
-        </p>
-      </div>
-
-      <div class="text-center p-6 border rounded-2xl">
-        <div class="text-4xl mb-4">☎️</div>
-        <h3 class="font-semibold mb-2">24/7 Support</h3>
-        <p class="text-sm text-gray-500">
-          Friendly customer service
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- NEW PRODUCTS -->
-  <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-6">
-
-      <div class="text-center mb-14">
-        <h2 class="text-4xl font-bold mb-4">
-          New Products
-        </h2>
-
-        <p class="text-gray-500">
-          Explore our latest flower collections
-        </p>
-      </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-        <!-- CARD -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
-          <img
-            src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?q=80&w=900"
-            class="h-72 w-full object-cover"
-          />
+        <!-- Feature -->
+        <div
+          class="bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
 
-          <div class="p-5">
-            <h3 class="font-semibold mb-2">
+          <div class="text-5xl mb-5">
+            🚚
+          </div>
+
+          <h3 class="text-xl font-semibold mb-3">
+            Free Delivery
+          </h3>
+
+          <p class="text-gray-500 leading-relaxed">
+            Fast and reliable flower delivery to your doorstep.
+          </p>
+
+        </div>
+
+        <!-- Feature -->
+        <div
+          class="bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
+
+          <div class="text-5xl mb-5">
+            💐
+          </div>
+
+          <h3 class="text-xl font-semibold mb-3">
+            Fresh Flowers
+          </h3>
+
+          <p class="text-gray-500 leading-relaxed">
+            Hand-picked premium flowers for every special occasion.
+          </p>
+
+        </div>
+
+        <!-- Feature -->
+        <div
+          class="bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
+
+          <div class="text-5xl mb-5">
+            🎁
+          </div>
+
+          <h3 class="text-xl font-semibold mb-3">
+            Gift Packages
+          </h3>
+
+          <p class="text-gray-500 leading-relaxed">
+            Beautiful flower gifts wrapped with elegance and care.
+          </p>
+
+        </div>
+
+        <!-- Feature -->
+        <div
+          class="bg-white border rounded-3xl p-8 text-center shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
+
+          <div class="text-5xl mb-5">
+            ☎️
+          </div>
+
+          <h3 class="text-xl font-semibold mb-3">
+            24/7 Support
+          </h3>
+
+          <p class="text-gray-500 leading-relaxed">
+            Friendly support team always ready to help you.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- NEW PRODUCTS -->
+  <!-- ========================= -->
+
+  <section class="bg-gray-50 py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+
+        <h2 class="text-4xl md:text-5xl font-bold mb-5">
+          New Products
+        </h2>
+
+        <p class="text-gray-500 max-w-2xl mx-auto leading-relaxed">
+          Explore our newest flower collections crafted with freshness,
+          elegance, and love.
+        </p>
+
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Product Card -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
+
+          <div class="overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?q=80&w=900"
+              class="h-80 w-full object-cover hover:scale-110 transition duration-500"
+            >
+
+          </div>
+
+          <div class="p-6">
+
+            <h3 class="text-xl font-semibold mb-3">
               Pink Roses
             </h3>
 
-            <p class="text-pink-500 font-bold">
+            <p class="text-pink-500 font-bold text-lg">
               $25.00
             </p>
+
           </div>
+
         </div>
 
-        <!-- CARD -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
-          <img
-            src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=900"
-            class="h-72 w-full object-cover"
-          />
+        <!-- Product Card -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
 
-          <div class="p-5">
-            <h3 class="font-semibold mb-2">
+          <div class="overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=900"
+              class="h-80 w-full object-cover hover:scale-110 transition duration-500"
+            >
+
+          </div>
+
+          <div class="p-6">
+
+            <h3 class="text-xl font-semibold mb-3">
               Tulip Bouquet
             </h3>
 
-            <p class="text-pink-500 font-bold">
+            <p class="text-pink-500 font-bold text-lg">
               $30.00
             </p>
+
           </div>
+
         </div>
 
-        <!-- CARD -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
-          <img
-            src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=900"
-            class="h-72 w-full object-cover"
-          />
+        <!-- Product Card -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
 
-          <div class="p-5">
-            <h3 class="font-semibold mb-2">
+          <div class="overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=900"
+              class="h-80 w-full object-cover hover:scale-110 transition duration-500"
+            >
+
+          </div>
+
+          <div class="p-6">
+
+            <h3 class="text-xl font-semibold mb-3">
               White Flowers
             </h3>
 
-            <p class="text-pink-500 font-bold">
+            <p class="text-pink-500 font-bold text-lg">
               $22.00
             </p>
+
           </div>
+
         </div>
 
-        <!-- CARD -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
-          <img
-            src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?q=80&w=900"
-            class="h-72 w-full object-cover"
-          />
+        <!-- Product Card -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
 
-          <div class="p-5">
-            <h3 class="font-semibold mb-2">
+          <div class="overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?q=80&w=900"
+              class="h-80 w-full object-cover hover:scale-110 transition duration-500"
+            >
+
+          </div>
+
+          <div class="p-6">
+
+            <h3 class="text-xl font-semibold mb-3">
               Purple Tulips
             </h3>
 
-            <p class="text-pink-500 font-bold">
+            <p class="text-pink-500 font-bold text-lg">
               $28.00
             </p>
+
           </div>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
-  <!-- PROMO SECTION -->
-  <section class="py-20">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+  <!-- ========================= -->
+  <!-- PROMOTION SECTION -->
+  <!-- ========================= -->
 
-      <img
-        src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=1200"
-        class="rounded-2xl shadow-lg"
-      />
+  <section class="py-24">
 
-      <div>
-        <h2 class="text-4xl font-bold mb-6">
-          Surprise Your Loved Ones
-        </h2>
+    <div class="max-w-7xl mx-auto px-6">
 
-        <p class="text-gray-600 mb-6">
-          Beautiful handcrafted bouquets arranged with premium flowers.
-        </p>
+      <div class="grid md:grid-cols-2 gap-16 items-center">
 
-        <ul class="space-y-3 text-gray-700 mb-8">
-          <li>✔ Fresh hand-picked flowers</li>
-          <li>✔ Same day delivery</li>
-          <li>✔ Affordable prices</li>
-        </ul>
+        <!-- Image -->
+        <div>
 
-        <button class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-full transition">
-          Read More
-        </button>
+          <img
+            src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=1200"
+            class="rounded-3xl shadow-2xl hover:scale-105 transition duration-500"
+          >
+
+        </div>
+
+        <!-- Content -->
+        <div>
+
+          <h2 class="text-5xl font-bold leading-tight mb-8">
+            Surprise Your Loved Ones
+          </h2>
+
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">
+            Premium handcrafted flower arrangements designed to create
+            unforgettable memories and heartfelt moments.
+          </p>
+
+          <ul class="space-y-4 mb-10">
+
+            <li class="flex items-center gap-3">
+              <span class="text-green-500 text-xl">✔</span>
+              Fresh hand-picked flowers
+            </li>
+
+            <li class="flex items-center gap-3">
+              <span class="text-green-500 text-xl">✔</span>
+              Same-day delivery service
+            </li>
+
+            <li class="flex items-center gap-3">
+              <span class="text-green-500 text-xl">✔</span>
+              Affordable premium bouquets
+            </li>
+
+          </ul>
+
+          <button
+            class="bg-gradient-to-r from-pink-500 to-red-400 text-white px-8 py-4 rounded-full hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+          >
+            Read More
+          </button>
+
+        </div>
+
       </div>
 
     </div>
+
   </section>
 
-  <!-- BLOG -->
-  <section class="py-20 bg-gray-50">
+  <!-- ========================= -->
+  <!-- BLOG SECTION -->
+  <!-- ========================= -->
+
+  <section class="bg-gray-50 py-24">
+
     <div class="max-w-7xl mx-auto px-6">
 
-      <div class="text-center mb-14">
-        <h2 class="text-4xl font-bold mb-4">
+      <!-- Header -->
+      <div class="text-center mb-16">
+
+        <h2 class="text-4xl md:text-5xl font-bold mb-5">
           From Our Blog
         </h2>
 
-        <p class="text-gray-500">
-          Flower inspiration and tips
+        <p class="text-gray-500 max-w-2xl mx-auto leading-relaxed">
+          Explore flower inspiration, floral decoration tips, and elegant
+          bouquet ideas.
         </p>
+
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
+      <!-- Blog Grid -->
+      <div class="grid md:grid-cols-3 gap-10">
 
-        <div class="bg-white rounded-2xl overflow-hidden shadow">
-          <img
-            src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=900"
-            class="h-60 w-full object-cover"
-          />
+        <!-- Blog -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
 
-          <div class="p-6">
-            <h3 class="font-semibold text-xl mb-3">
+          <div class="overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=900"
+              class="h-64 w-full object-cover hover:scale-110 transition duration-500"
+            >
+
+          </div>
+
+          <div class="p-7">
+
+            <h3 class="text-2xl font-semibold mb-4">
               Flower Beauty
             </h3>
 
-            <p class="text-gray-500 text-sm">
-              Discover how flowers brighten every moment.
+            <p class="text-gray-500 leading-relaxed">
+              Discover how flowers bring happiness, beauty, and elegance
+              into everyday life.
             </p>
+
           </div>
+
         </div>
 
-        <div class="bg-white rounded-2xl overflow-hidden shadow">
-          <img
-            src="https://images.unsplash.com/photo-1526045478516-99145907023c?q=80&w=900"
-            class="h-60 w-full object-cover"
-          />
+        <!-- Blog -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
 
-          <div class="p-6">
-            <h3 class="font-semibold text-xl mb-3">
+          <div class="overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1526045478516-99145907023c?q=80&w=900"
+              class="h-64 w-full object-cover hover:scale-110 transition duration-500"
+            >
+
+          </div>
+
+          <div class="p-7">
+
+            <h3 class="text-2xl font-semibold mb-4">
               Floral Decoration
             </h3>
 
-            <p class="text-gray-500 text-sm">
-              Creative flower decoration ideas for events.
+            <p class="text-gray-500 leading-relaxed">
+              Creative flower arrangement ideas for weddings, events,
+              and celebrations.
             </p>
+
           </div>
+
         </div>
 
-        <div class="bg-white rounded-2xl overflow-hidden shadow">
-          <img
-            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=900"
-            class="h-60 w-full object-cover"
-          />
+        <!-- Blog -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+        >
 
-          <div class="p-6">
-            <h3 class="font-semibold text-xl mb-3">
+          <div class="overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=900"
+              class="h-64 w-full object-cover hover:scale-110 transition duration-500"
+            >
+
+          </div>
+
+          <div class="p-7">
+
+            <h3 class="text-2xl font-semibold mb-4">
               Wedding Flowers
             </h3>
 
-            <p class="text-gray-500 text-sm">
-              Elegant flower ideas for weddings and parties.
+            <p class="text-gray-500 leading-relaxed">
+              Elegant floral inspiration to make weddings magical and memorable.
             </p>
+
           </div>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
+  <!-- ========================= -->
   <!-- NEWSLETTER -->
-  <section class="py-20">
-    <div class="max-w-3xl mx-auto text-center px-6">
+  <!-- ========================= -->
 
-      <h2 class="text-4xl font-bold mb-6">
+  <section class="py-24">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
         Join Our Newsletter
       </h2>
 
-      <p class="text-gray-500 mb-8">
-        Subscribe to get updates and special offers.
+      <p class="text-gray-500 text-lg mb-10">
+        Subscribe to receive updates, discounts, and flower inspiration.
       </p>
 
-      <div class="flex flex-col md:flex-row gap-4">
+      <div class="flex flex-col md:flex-row gap-5">
+
         <input
           type="email"
-          placeholder="Enter your email"
-          class="flex-1 border border-gray-300 px-5 py-4 rounded-full outline-none focus:border-pink-500"
-        />
+          placeholder="Enter your email address"
+          class="flex-1 border border-gray-300 px-6 py-4 rounded-full outline-none focus:border-pink-500"
+        >
 
-        <button class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-full transition">
+        <button
+          class="bg-gradient-to-r from-pink-500 to-red-400 text-white px-8 py-4 rounded-full hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+        >
           Subscribe
         </button>
+
       </div>
 
     </div>
+
   </section>
 
+  <!-- ========================= -->
   <!-- FOOTER -->
-  <footer class="bg-black text-white py-16">
+  <!-- ========================= -->
 
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+  <footer class="bg-black text-white py-20">
 
+    <div class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+
+      <!-- About -->
       <div>
-        <h2 class="text-3xl font-bold text-pink-500 mb-4">
+
+        <h2 class="text-3xl font-extrabold text-pink-500 mb-5">
           Florist
         </h2>
 
-        <p class="text-gray-400">
-          Fresh flowers and bouquets crafted with elegance and love.
+        <p class="text-gray-400 leading-relaxed">
+          Beautiful handcrafted flower bouquets designed with elegance,
+          freshness, and love.
         </p>
+
       </div>
 
+      <!-- Links -->
       <div>
-        <h3 class="font-semibold mb-4">Quick Links</h3>
 
-        <ul class="space-y-3 text-gray-400">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Blog</a></li>
+        <h3 class="text-xl font-semibold mb-6">
+          Quick Links
+        </h3>
+
+        <ul class="space-y-4 text-gray-400">
+
+          <li>
+            <a href="#" class="hover:text-pink-500 transition duration-300">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-pink-500 transition duration-300">
+              Shop
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-pink-500 transition duration-300">
+              Blog
+            </a>
+          </li>
+
         </ul>
+
       </div>
 
+      <!-- Support -->
       <div>
-        <h3 class="font-semibold mb-4">Support</h3>
 
-        <ul class="space-y-3 text-gray-400">
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Privacy</a></li>
+        <h3 class="text-xl font-semibold mb-6">
+          Support
+        </h3>
+
+        <ul class="space-y-4 text-gray-400">
+
+          <li>
+            <a href="#" class="hover:text-pink-500 transition duration-300">
+              Help Center
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-pink-500 transition duration-300">
+              Privacy Policy
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-pink-500 transition duration-300">
+              Terms & Conditions
+            </a>
+          </li>
+
         </ul>
+
       </div>
 
+      <!-- Contact -->
       <div>
-        <h3 class="font-semibold mb-4">Contact</h3>
 
-        <ul class="space-y-3 text-gray-400">
+        <h3 class="text-xl font-semibold mb-6">
+          Contact
+        </h3>
+
+        <ul class="space-y-4 text-gray-400">
+
           <li>Colombo, Sri Lanka</li>
+
           <li>+94 77 123 4567</li>
-          <li>flowers@email.com</li>
+
+          <li>flowershop@email.com</li>
+
         </ul>
+
       </div>
 
     </div>
 
-    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
+    <!-- Bottom -->
+    <div class="border-t border-gray-800 mt-14 pt-8 text-center text-gray-500 text-sm">
+
       © 2026 Flower Shop. All Rights Reserved.
+
     </div>
 
   </footer>
