@@ -22,65 +22,38 @@
 
 <body class="bg-white text-gray-800">
 
-    <!-- ========================= -->
     <!-- TOP BAR -->
-    <!-- ========================= -->
 
     <div class="bg-black text-white text-center text-sm py-3 tracking-wide">
-        🌸 Fresh Flowers & Bouquets — 20% Off This Week
+         Fresh Flowers & Bouquets — 20% Off This Week
     </div>
 
-    <!-- ========================= -->
-    <!-- NAVBAR -->
-    <!-- ========================= -->
+   <!-- NAVBAR -->
+<header class="bg-white shadow-sm sticky top-0 z-50 h-24"> <!-- Added a specific height to header -->
+    <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between"> <!-- Added h-full here -->
+        
+        <!-- Logo -->
+        <!-- Changed to h-full and removed fixed h-20/w-20 to allow it to scale with the header -->
+        <img src="images/logo/Florist logo.png" alt="Florist Logo" class="h-full w-auto py-1 rounded-full">
 
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center gap-10 font-medium">
+            <a href="#" class="nav-link hover:text-pink-500">HOME</a>
+            <a href="#" class="nav-link hover:text-pink-500">SHOP</a>
+            <a href="#" class="nav-link hover:text-pink-500">BLOG</a>
+            <a href="#" class="nav-link hover:text-pink-500">PAGES</a>
+            <a href="#" class="nav-link hover:text-pink-500">CONTACT</a>
+        </nav>
 
-        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        <!-- Button -->
+        <button class="hidden md:block bg-gradient-to-r from-pink-500 to-red-400 text-white px-6 py-3 rounded-full hover:scale-105 hover:shadow-xl transition duration-300">
+            Shop Now
+        </button>
 
-            <!-- Logo -->
-            <h1 class="text-3xl font-extrabold text-pink-500">
-                Florist
-            </h1>
+    </div>
+</header>
 
-            <!-- Navigation -->
-            <nav class="hidden md:flex items-center gap-10 font-medium">
-
-                <a href="#" class="nav-link hover:text-pink-500">
-                    Home
-                </a>
-
-                <a href="#" class="nav-link hover:text-pink-500">
-                    Shop
-                </a>
-
-                <a href="#" class="nav-link hover:text-pink-500">
-                    Blog
-                </a>
-
-                <a href="#" class="nav-link hover:text-pink-500">
-                    Pages
-                </a>
-
-                <a href="#" class="nav-link hover:text-pink-500">
-                    Contact
-                </a>
-
-            </nav>
-
-            <!-- Button -->
-            <button
-                class="hidden md:block bg-gradient-to-r from-pink-500 to-red-400 text-white px-6 py-3 rounded-full hover:scale-105 hover:shadow-xl transition duration-300">
-                Shop Now
-            </button>
-
-        </div>
-
-    </header>
-
-    <!-- ========================= -->
     <!-- HERO SECTION -->
-    <!-- ========================= -->
 
     <section class="bg-gray-100 overflow-hidden">
 
