@@ -89,49 +89,48 @@
 </header>
 
     <!-- HERO SECTION -->
+<section class="bg-gray-100 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+        <div class="grid md:grid-cols-2 gap-14 items-center">
 
-    <section class="bg-gray-100 overflow-hidden">
+        <!-- Left Arrow -->
+                <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-3 rounded-full shadow-lg hover:bg-pink-500 hover:text-white transition-all">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
 
-        <div class="max-w-7xl mx-auto px-6 py-24">
+                <!-- Right Arrow -->
+                <button class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-3 rounded-full shadow-lg hover:bg-pink-500 hover:text-white transition-all">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            <!-- Left Content -->
+            <div>
+                <p class="text-pink-500 font-semibold mb-5 uppercase tracking-widest">
+                    Fresh Flowers
+                </p>
+                <h2 class="text-5xl md:text-6xl font-extrabold leading-tight mb-8">
+                    Beautiful Flowers For Every Occasion
+                </h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-10">
+                    Elegant handcrafted flower arrangements designed to bring happiness,
+                    love, and unforgettable memories.
+                </p>
+                <button
+                    class="bg-gradient-to-r from-pink-500 to-red-400 text-white px-8 py-4 rounded-full font-medium hover:-translate-y-1 hover:shadow-2xl transition duration-300">
+                    Start Shopping
+                </button>
+            </div>
 
-            <div class="grid md:grid-cols-2 gap-14 items-center">
-
-                <!-- Left Content -->
-                <div>
-
-                    <p class="text-pink-500 font-semibold mb-5 uppercase tracking-widest">
-                        Fresh Flowers
-                    </p>
-
-                    <h2 class="text-5xl md:text-6xl font-extrabold leading-tight mb-8">
-                        Beautiful Flowers For Every Occasion
-                    </h2>
-
-                    <p class="text-gray-600 text-lg leading-relaxed mb-10">
-                        Elegant handcrafted flower arrangements designed to bring happiness,
-                        love, and unforgettable memories.
-                    </p>
-
-                    <button
-                        class="bg-gradient-to-r from-pink-500 to-red-400 text-white px-8 py-4 rounded-full font-medium hover:-translate-y-1 hover:shadow-2xl transition duration-300">
-                        Start Shopping
-                    </button>
-
-                </div>
-
-                <!-- Right Image -->
-                <div>
-
-                    <img src="images/hero/hero.png"
-                        alt="Flower Hero" class="rounded-3xl shadow-2xl w-full hover:scale-105 transition duration-500">
-
-                </div>
+            <!-- Right Image -->
+            <div class="relative group">
+                <!-- Main Image -->
+                <img src="images/hero/hero.png" alt="Flower Hero" 
+                     class="rounded-3xl shadow-2xl w-full hover:scale-105 transition duration-500">
 
             </div>
 
         </div>
-
-    </section>
+    </div>
+</section>
 
     <!-- FEATURES -->
 
@@ -210,13 +209,9 @@
                     <p class="text-gray-500 leading-relaxed">
                         Friendly support team always ready to help you.
                     </p>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
    <!-- NEW PRODUCTS SECTION -->
@@ -813,18 +808,12 @@
                     <img
                         src="images/flower experts/person3.png"
                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                        alt=""
-                    >
+                        alt="Martha Stewart">
+            </div>
 
-                </div>
+                <h3 class="text-xl font-semibold mb-2">Martha Stewart</h3>
 
-                <h3 class="text-xl font-semibold mb-2">
-                    Martha Stewart
-                </h3>
-
-                <p class="text-gray-500">
-                    Founder
-                </p>
+                <p class="text-gray-500">Founder</p>
 
             </div>
 
@@ -840,128 +829,102 @@
 
                 </div>
 
-                <h3 class="text-xl font-semibold mb-2">
-                    Erin Benzakein
-                </h3>
-
-                <p class="text-gray-500">
-                    Florist
-                </p>
-
+                <h3 class="text-xl font-semibold mb-2">Erin Benzakein</h3>
+                <p class="text-gray-500">Florist</p>
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-    <!-- BLOG SECTION -->
+  <!-- BLOG SECTION -->
+<section class="bg-gray-50 py-24">
+    <div class="max-w-7xl mx-auto px-6">
 
-    <section class="bg-gray-50 py-24">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-5">From Our Blog</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                Explore flower inspiration, floral decoration tips, and elegant bouquet ideas.
+            </p>
+        </div>
 
-        <div class="max-w-7xl mx-auto px-6">
+        <!-- Blog Grid -->
+        <div class="grid md:grid-cols-3 gap-10">
 
-            <!-- Header -->
-            <div class="text-center mb-16">
+            <!-- Blog Card Template -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md group">
+                <div class="overflow-hidden">
+                    <img src="images/blog/flower beauty.png" class="h-64 w-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-7">
+                    <!-- Author -->
+                    <p class="text-pink-500 font-medium text-sm mb-3">By Florist Design Team</p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4">Flower Beauty</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Discover how flowers bring happiness, beauty, and elegance into everyday life.
+                    </p>
 
-                <h2 class="text-4xl md:text-5xl font-bold mb-5">
-                    From Our Blog
-                </h2>
-
-                <p class="text-gray-500 max-w-2xl mx-auto leading-relaxed">
-                    Explore flower inspiration, floral decoration tips, and elegant
-                    bouquet ideas.
-                </p>
-
+                    <!-- Footer Details -->
+                    <div class="flex items-center justify-between border-t pt-4">
+                        <a href="#" class="font-semibold text-gray-800 hover:text-pink-500 underline underline-offset-4 transition">
+                            Continue Reading
+                        </a>
+                        <div class="flex items-center gap-1.5 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                            <span class="text-sm">12</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Blog Grid -->
-            <div class="grid md:grid-cols-3 gap-10">
-
-                <!-- Blog -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-md card-hover">
-
-                    <div class="overflow-hidden">
-
-                        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=900"
-                            class="h-64 w-full object-cover hover:scale-110 transition duration-500">
-
-                    </div>
-
-                    <div class="p-7">
-
-                        <h3 class="text-2xl font-semibold mb-4">
-                            Flower Beauty
-                        </h3>
-
-                        <p class="text-gray-500 leading-relaxed">
-                            Discover how flowers bring happiness, beauty, and elegance
-                            into everyday life.
-                        </p>
-
-                    </div>
-
+            <!-- Repeat for other cards (e.g., Floral Decoration) -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md group">
+                <div class="overflow-hidden">
+                    <img src="images/blog/flower deco.png" class="h-64 w-full object-cover group-hover:scale-110 transition duration-500">
                 </div>
-
-                <!-- Blog -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-md card-hover">
-
-                    <div class="overflow-hidden">
-
-                        <img src="https://images.unsplash.com/photo-1526045478516-99145907023c?q=80&w=900"
-                            class="h-64 w-full object-cover hover:scale-110 transition duration-500">
-
+                <div class="p-7">
+                    <p class="text-pink-500 font-medium text-sm mb-3">By Event Styling Team</p>
+                    <h3 class="text-2xl font-semibold mb-4">Floral Decoration</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Creative flower arrangement ideas for weddings, events, and celebrations.
+                    </p>
+                    <div class="flex items-center justify-between border-t pt-4">
+                        <a href="#" class="font-semibold text-gray-800 hover:text-pink-500 underline underline-offset-4 transition">Continue Reading</a>
+                        <div class="flex items-center gap-1.5 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                            <span class="text-sm">08</span>
+                        </div>
                     </div>
-
-                    <div class="p-7">
-
-                        <h3 class="text-2xl font-semibold mb-4">
-                            Floral Decoration
-                        </h3>
-
-                        <p class="text-gray-500 leading-relaxed">
-                            Creative flower arrangement ideas for weddings, events,
-                            and celebrations.
-                        </p>
-
-                    </div>
-
                 </div>
+            </div>
 
-                <!-- Blog -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-md card-hover">
-
-                    <div class="overflow-hidden">
-
-                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=900"
-                            class="h-64 w-full object-cover hover:scale-110 transition duration-500">
-
-                    </div>
-
-                    <div class="p-7">
-
-                        <h3 class="text-2xl font-semibold mb-4">
-                            Wedding Flowers
-                        </h3>
-
-                        <p class="text-gray-500 leading-relaxed">
-                            Elegant floral inspiration to make weddings magical and memorable.
-                        </p>
-
-                    </div>
-
+            <!-- Repeat for Wedding Flowers -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md group">
+                <div class="overflow-hidden">
+                    <img src="images/blog/wedding flowers.png" class="h-64 w-full object-cover group-hover:scale-110 transition duration-500">
                 </div>
-
+                <div class="p-7">
+                    <p class="text-pink-500 font-medium text-sm mb-3">By Wedding Experts</p>
+                    <h3 class="text-2xl font-semibold mb-4">Wedding Flowers</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Elegant floral inspiration to make weddings magical and memorable.
+                    </p>
+                    <div class="flex items-center justify-between border-t pt-4">
+                        <a href="#" class="font-semibold text-gray-800 hover:text-pink-500 underline underline-offset-4 transition">Continue Reading</a>
+                        <div class="flex items-center gap-1.5 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                            <span class="text-sm">24</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
+    </div>
+</section>
 
-    </section>
-
-    <!-- ========================= -->
     <!-- NEWSLETTER -->
-    <!-- ========================= -->
 
     <section class="py-24">
 
