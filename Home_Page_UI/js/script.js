@@ -1,18 +1,41 @@
 async function loadComponent(id, file) {
-    const response = await fetch(file);
-    const data = await response.text();
+    try {
+        const response = await fetch(file);
 
-    document.getElementById(id).innerHTML = data;
+        if (!response.ok) {
+            throw new Error(`Cannot load ${file}`);
+        }
+
+        const data = await response.text();
+
+        document.getElementById(id).innerHTML = data;
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-loadComponent("navbar", "components/navbar.html");
-loadComponent("hero", "components/hero.html");
-loadComponent("features", "components/features.html");
-loadComponent("products", "components/products.html");
-loadComponent("promotions", "components/promotions.html");
-loadComponent("featured", "components/featured.html");
-loadComponent("testimonial", "components/testimonial.html");
-loadComponent("experts", "components/experts.html");
-loadComponent("blog", "components/blog.html");
-loadComponent("newsletter", "components/newsletter.html");
-loadComponent("footer", "components/footer.html");
+document.addEventListener("DOMContentLoaded", () => {
+
+    loadComponent("navbar", "components/navbar.html");
+
+    loadComponent("hero", "components/hero.html");
+
+    loadComponent("features", "components/features.html");
+
+    loadComponent("products", "components/products.html");
+
+    loadComponent("promotions", "components/promotions.html");
+
+    loadComponent("featured", "components/featured.html");
+
+    loadComponent("testimonials", "components/testimonials.html");
+
+    loadComponent("experts", "components/experts.html");
+
+    loadComponent("blog", "components/blog.html");
+
+    loadComponent("newsletter", "components/newsletter.html");
+
+    loadComponent("footer", "components/footer.html");
+
+});
