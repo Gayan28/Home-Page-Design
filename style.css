@@ -9,9 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ========================= */
 /* CUSTOM UTILITIES */
-/* ========================= */
 
 .section-title {
   font-size: 2.5rem;
@@ -27,9 +25,7 @@ html {
   line-height: 1.8;
 }
 
-/* ========================= */
 /* BUTTON HOVER EFFECT */
-/* ========================= */
 
 .btn-hover {
   transition: all 0.3s ease;
@@ -40,10 +36,7 @@ html {
   box-shadow: 0 20px 25px rgba(0,0,0,0.15);
 }
 
-/* ========================= */
 /* CARD EFFECTS */
-/* ========================= */
-
 .card-hover {
   transition: all 0.3s ease;
 }
@@ -53,9 +46,7 @@ html {
   box-shadow: 0 20px 25px rgba(0,0,0,0.1);
 }
 
-/* ========================= */
 /* IMAGE ZOOM EFFECT */
-/* ========================= */
 
 .image-hover {
   overflow: hidden;
@@ -69,9 +60,7 @@ html {
   transform: scale(1.08);
 }
 
-/* ========================= */
 /* NAVBAR LINK EFFECT */
-/* ========================= */
 
 .nav-link {
   position: relative;
@@ -93,9 +82,7 @@ html {
   width: 100%;
 }
 
-/* ========================= */
 /* CUSTOM SCROLLBAR */
-/* ========================= */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -110,9 +97,7 @@ html {
   border-radius: 20px;
 }
 
-/* ========================= */
 /* RESPONSIVE */
-/* ========================= */
 
 @media (max-width: 768px) {
 
