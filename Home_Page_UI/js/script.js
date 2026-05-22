@@ -1,35 +1,18 @@
-// =========================
-// NAVBAR SHADOW ON SCROLL
-// =========================
+async function loadComponent(id, file) {
+    const response = await fetch(file);
+    const data = await response.text();
 
-window.addEventListener("scroll", function () {
-
-  const header = document.querySelector("header");
-
-  if (window.scrollY > 50) {
-
-    header.classList.add("shadow-lg");
-
-  } else {
-
-    header.classList.remove("shadow-lg");
-
-  }
-
-});
-
-// =========================
-// SIMPLE NEWSLETTER ALERT
-// =========================
-
-const subscribeButton = document.querySelector("#subscribeBtn");
-
-if (subscribeButton) {
-
-  subscribeButton.addEventListener("click", () => {
-
-    alert("Thank you for subscribing!");
-
-  });
-
+    document.getElementById(id).innerHTML = data;
 }
+
+loadComponent("navbar", "components/navbar.html");
+loadComponent("hero", "components/hero.html");
+loadComponent("features", "components/features.html");
+loadComponent("products", "components/products.html");
+loadComponent("promotions", "components/promotions.html");
+loadComponent("featured", "components/featured.html");
+loadComponent("testimonial", "components/testimonial.html");
+loadComponent("experts", "components/experts.html");
+loadComponent("blog", "components/blog.html");
+loadComponent("newsletter", "components/newsletter.html");
+loadComponent("footer", "components/footer.html");
