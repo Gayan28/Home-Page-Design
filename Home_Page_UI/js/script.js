@@ -1,16 +1,20 @@
 async function loadComponent(id, file) {
     try {
+
         const response = await fetch(file);
 
         if (!response.ok) {
-            throw new Error(`Cannot load ${file}`);
+            throw new Error(`Could not load ${file}`);
         }
 
         const data = await response.text();
 
         document.getElementById(id).innerHTML = data;
+
     } catch (error) {
+
         console.error(error);
+
     }
 }
 
